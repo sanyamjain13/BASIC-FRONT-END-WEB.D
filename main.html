@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jain Radio & electric works</title>
+  <!--this is the external way by linkinh the style.css with the html page-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style3.css">
+<!-- this is the internal way of css by defining the tag and then
+defining the color and everything else inside {}-->
+<style>
+  .headings:hover
+  {
+    background-color:lightgrey ;
+  }
+
+.headings{
+  margin-bottom: 25px;
+  font-weight: bolder;
+  font-family: cursive;
+  font-size: 30px;
+  border-style: dashed;
+  width: 150px;
+  margin-top: 20px;
+  text-align: center;
+  color:black; margin-left:20px;
+}
+.aboutpara
+{
+width: 850px;
+font-family:arial black;
+font-weight: bold;
+text-shadow: 0 0 10px silver;
+letter-spacing: 2px;
+word-spacing: 3px;
+margin-left: 25px;
+margin-top: 20px;
+font-size: 17px;
+}
+#signup{
+  width: 400px;
+  margin:   0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 2px 0;
+  box-shadow: 2px 2px 5px black;
+}
+form{
+  width: 410px;
+  background:;
+  height: auto;
+  padding: 5px 5px;
+  font-family: arial;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.form-elements{
+margin: 10px 0px;
+}
+.form-elements label{
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: bolder;
+  }
+.form-elements input,select{
+  display: block;
+  width: 100%;
+  padding:10px;
+  margin-top: 10px;
+  box-shadow:inset 0 0 5px gray,0 0 0px black;
+  box-sizing: border-box;
+  border: 1px solid silver;
+  outline: none;
+  transition: box-shadow 1s linear;
+}
+.form-elements input:focus{
+  box-shadow:inset 0 0 0px gray,0 0 10px black;
+}
+
+</style>
+</head>
+<body>
+
+<div id="logo"></div>
+<img src="call.png" alt="call us at">
+<div id="call">CALL US AT-011-64569311</div>
+<div id="email" title="EMAIL">JAINRADIOAIRCEL@GMAIL.COM</div>
+<br><br><br>
+
+<nav>
+  <ul>
+    <a href="sanyam.html"><li class="active">ABOUT US</li></a>
+    <a href="gallery.html"><li>GALLERY</li></a>
+    <li>BRANDS</li>
+    <a href="samsung_plaza.html"><li>SAMSUNG PLAZA</li></a>
+    <a href="staff.html" target="_self"><li>STAFF MEMBERS</li></a>
+    <a href="contact-us.html"><li>CONTACT US</li></a>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <div class="headings" title="ABOUT OUR COMPANY"> ABOUT </div>
+    <div class="aboutpara" style="color:black">
+      An electronic retail company which deals in all electronic goods. A diverse range of merchandise in various categories like kitchen appliances, storage device,
+      air conditioners & lot more .From the wide range of branded products, you are bound to find something great that will match up to your budget
+      as well as personal requirement.
+    </div><br>
+
+    <div class="aboutpara">
+      At JR, our endeavor has always been fulfilling every electronic requirement by helping customers choose the best product, as per their needs. JR's efficient,
+      well-trained & knowledgeable sales advisors are completely equipped to offer sound and personalized advice for helping a customer receive the best value for money.
+      Making shopping experience delightful post purchase is the foundation for investing in a robust customer service support at our store.
+    </div>
+  </section>
+<!-- SIGN UP FORM-->
+  <aside>
+
+    <form>
+
+      <div id="signup">SIGN-UP</div>
+      <div class="form-elements" style="margin-top:22px;">
+        <label for="username">USERNAME</label>
+        <input type="text" name="username" placeholder="ENTER  YOUR  NAME" required ></td>
+      </div>
+
+      <div class="form-elements">
+        <label for="pass">PASSWORD</label>
+        <input type="password" name="pass" placeholder="ENTER  YOUR  PASSWORD" required>
+      </div>
+
+      <div class="form-elements">
+        <label for="email">E-MAIL</label>
+        <input type="email" name="email" placeholder="YOUR EMAIL  (eg-xyz123@gmail.com)"required>
+      </div>
+
+      <!--<div class="form-elements">
+        <label for="birthday">DATE OF BIRTH </label>
+        <input type="date" name="date">
+      </div> -->
+
+      <div class="form-elements">
+        <label for="select_city">SELECT YOUR CITY</label>
+        <input list="country" required>
+        <datalist id="country">
+        <!---<select name="city" style="font-size: 15px; font-family:arial; font-weight:bolder;" required>-->
+          <option>DELHI</option>
+          <option>DELHI CANTONMENT</option>
+          <option >GURGAON</option>
+          <option >GHAZIABAD</option>
+          <option>KIRTI NAGAR</option>
+          <option>LAJPAT NAGAR</option>
+          <option>MOTI BAGH</option>
+          <option>NEW DELHI</option>
+          <option >NANGLOI JAT</option>
+          <option>NARELA</option>
+          <option>NAJAFGARH</option>
+        </datalist>
+        <!--</select>-->
+      </div>
+
+      <div class="form-elements" style="margin-top:25px;">
+        <input type="submit" value="SIGN UP" name="submit_form" style="font-size: 20px;">
+      </div>
+
+    </form>
+  </aside>
+
+<footer>
+  <div class="brandlogo" style="background-image: url(samsung.jpg)"></div>
+  <div class="brandlogo" style="background-image: url(lg.jpg)"></div>
+  <div class="brandlogo" style="background-image: url(panasonic.png)"></div>
+  <div class="brandlogo" style="background-image: url(sony.png)"></div>
+  <div class="brandlogo" style="background-image: url(godrej.jpg)"></div>
+  <div class="brandlogo" style="background-image: url(videocon.jpg)"></div>
+  <div class="brandlogo" style="background-image: url(oppo.png)"></div>
+  <div class="brandlogo" style="background-image: url(vivo.png)"></div>
+  <div class="brandlogo" style="background-image: url(apple.jpg)"></div>
+  <div class="brandlogo" style="background-image: url(hp.png)"></div>
+  <div class="brandlogo" style="background-image: url(dell.png)"></div>
+  <div class="brandlogo" style="background-image: url(usha.png)"></div>
+  <div class="brandlogo" style="background-image: url(capitalfirst.jpg)"></div>
+  <div class="brandlogo" style="background-image: url(bajaj.jpg)"></div>
+  <div class="brandlogo" style="background-image: url(homecredit.png)"></div>
+  <div class="brandlogo"></div>
+</footer><br>
+  <div id="copyright">COPYRIGHT &copy; JAIN RADIO & ELECTRIC WORKS</div>
+
+<!-- this helps us to add a frame or the web page withing a web page
+<iframe src="samsung.html" style="margin-top:30px;"></iframe>-->
+
+</body>
+</html>
