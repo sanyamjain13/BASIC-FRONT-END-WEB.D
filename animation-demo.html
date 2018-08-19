@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> none</title>
+<link rel="stylesheet" href="styledemo.css">
+<style>
+  #div1{
+  width: 700px;
+  height: 200px;
+  background:orange;
+  margin: 5px 10px;
+  animation: anim1 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+  #div2
+  {
+  margin-left: 20px;
+  width: 600px;
+  padding: 20px;
+
+  -webkit-column-count:2;
+  column-count: 3;
+
+  -webkit-column-gap:10px;
+  column-gap: 60px;
+
+  column-rule: 2px dotted black;
+  }
+  /* to make animation we use keyframes and use this animation name in any elements
+     we can also use from and to instead of %
+  */
+  @keyframes anim1
+  {
+    0%{background: orange; border-radius: 0px;}
+    20%{background: lightblue;border-radius: 20px;}
+    40%{background: lightgreen;border-radius: 40px;}
+    70%{background: grey;border-radius: 60px;}
+    100%{background: orange;border-radius: 8  0px;}
+  }
+
+
+</style>
+</head>
+<body>
+<div id="container">
+  <header></header>
+  <nav>
+  </nav>
+  <main>
+    <section>
+      <div id="div1"><div>
+      <div id="div2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.
+      </div>
+    </section>
+    <aside >
+    <form>
+      <h1 style="text-align:center;">THE FORM</h1><hr>
+      <div class="form-group">
+        <label for="user-name">USERNAME</label>
+        <input type="text" name="user-name" id="username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" id="pass">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-MAIL</label>
+        <input type="email" name="e-mail">
+      </div>
+
+      <div class="form-group">
+        <label for="dob">DOB</label>
+        <input type="date" name="date">
+      </div>
+
+      <input type="range" value="4" min="1" max="10" step="2" id="range">
+      <input type="color" id="color">
+      <input type="url" name="url" import id="url">
+
+      <div class="form-group">
+        <input type="submit" value="SUBMIT">
+     </div>
+
+    </form>
+
+    </aside>
+  </main>
+  <footer></footer>
+
+</div>
+</body>
+</html>
